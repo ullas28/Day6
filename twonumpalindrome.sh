@@ -8,8 +8,8 @@ read num2
 sum=0
 remainder=0
 
-#function palindrome()
-#{
+function palindrome()
+{
 while [ $num1 -gt 0 ]
 do
 	remainder=$(($num1 % 10))
@@ -22,4 +22,5 @@ do
  else
 	echo "No Palindrome"
  fi
-#}
+}
+palindrome "$num1 $num2"
